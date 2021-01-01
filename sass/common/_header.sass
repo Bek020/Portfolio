@@ -1,0 +1,49 @@
+.top-line
+	padding: rem(15px) 0
+	background-color: #f5f7fa
+	border-bottom: 1px solid #e6e9ed
+	a
+		color: $mainColor
+		margin: 0 rem(15px)
+
+		&:first-child
+			margin-left: 0
+
+		&:last-child
+			margin-right: 0
+
+.social__link
+	&:hover
+		text-decoration: none
+		opacity: .8
+
+.navbar--top
+	padding: rem(36px) 0
+
+.navbar-nav__link
+	+use-font($font, rem(15px), $mainColor, 700)
+	text-transform: uppercase
+	margin: 0 rem(22px)
+
+	&:hover
+		color: $mainColor
+
+.search__input
+	border: none
+	background: #f5f5f5
+	padding: rem(4px)
+	border-radius: 15px 0 0 15px
+	max-width: 0
+	opacity: 0
+	transition: .5s
+
+	&.show
+		max-width: 200px
+		opacity: 1
+
+.search__btn
+	border: none
+	background: none
+
+	.fa-search
+		color: $mainColor
