@@ -10131,4 +10131,85 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.main {
+  background: #F2F5F7;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.main__text {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.main__image {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.main__item {
+  padding: 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .main__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.main__item .main__link {
+  padding: 20px 0;
+  list-style-type: none;
+}
+
+.main__btn {
+  border: none;
+  color: var(--main-color);
+}
+.main__btn-active {
+  color: var(--second-color);
+}
+
+.justify-content-center {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .justify-content-center {
+    display: inline;
+  }
+}
+
+.btn-secondary {
+  border: none;
+  background: #C9D2DA;
+}
+
+.main__end {
+  margin: 0 auto;
+  padding-top: 50px;
+  max-width: 700px;
+}
+
+.btn-primary {
+  margin: 20px;
+  padding: 10px 15px;
+  background: var(--second-color);
+  box-shadow: 0 2px #01a58a;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .btn-primary {
+    padding: 20px 25px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
