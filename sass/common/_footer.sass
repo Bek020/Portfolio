@@ -1,0 +1,62 @@
+.footer
+  background: #2F4052
+  color: white
+  padding: 75px 0
+
+  &__item
+    list-style-type: none
+
+    +tablet 
+      +grid(repeat(2, 1fr))
+
+    +desktop 
+      +grid(repeat(4, 1fr))
+
+  &__link 
+    max-width: 275px
+    padding: 0 5px
+    margin: 0 auto
+
+  &__title
+    text-transform: uppercase
+    padding: 50px 0 20px
+
+  &__desc
+    padding: 0
+    color: $textColor
+
+  &__subtext
+    +grid(repeat(10, 1fr))
+
+    &-link
+      color: $textColor
+
+      &:nth-child(2)
+        grid-column: 2 / 11
+
+      &:nth-child(4)
+        grid-column: 2 / 11
+        
+      &:nth-child(6)
+        grid-column: 2 / 11
+
+  &__icon
+    margin: 0 auto
+
+  &__image
+    +grid(repeat(2, 1fr))
+
+  &__img
+    padding: 0 5px 5px 0
+    width: 100%
+
+.form-control
+  font-size: 14px
+  background: #4E5C6C
+  border: solid #4E5C6C
+
+.btn-outline-secondary
+  font-size: 13px
+  text-transform: uppercase
+  color: white
+  background: $secondColor
