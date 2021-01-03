@@ -10045,18 +10045,20 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--second-color);
   font-size: 13px;
   border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #00A085;
   color: white;
 }
 @media screen and (min-width: 768px) {
   .slider__btn {
-    padding: 20px 50px;
+    padding: 15px 50px;
     font-size: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .slider__btn {
     margin-top: 50px;
-    padding: 25px 70px;
+    padding: 20px 70px;
     font-size: 20px;
   }
 }
@@ -10202,13 +10204,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px;
   padding: 10px 15px;
   background: var(--second-color);
-  box-shadow: 0 2px #01a58a;
+  box-shadow: 0 2px #00A085;
   font-size: 15px;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
   .btn-primary {
-    padding: 20px 25px;
+    padding: 15px 25px;
   }
 }
 
