@@ -10250,6 +10250,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer__subtext {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  gap: 5px 0;
 }
 .footer__subtext-link {
   color: var(--text-color);
@@ -10265,6 +10266,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__icon {
   margin: 0 auto;
+  color: var(--text-color);
 }
 .footer__image {
   display: grid;
