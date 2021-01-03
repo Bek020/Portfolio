@@ -10286,4 +10286,41 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--second-color);
 }
 
+.footer__end {
+  padding: 30px 0 15px;
+  background: #283645;
+}
+.footer__end-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav-link {
+  display: none;
+  color: var(--text-color);
+}
+@media screen and (min-width: 768px) {
+  .footer__nav-link {
+    display: inline;
+    position: relative;
+    margin: 0 0.625rem;
+  }
+  .footer__nav-link:last-child {
+    margin-right: 0;
+  }
+  .footer__nav-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.9375rem;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .footer__nav-link:first-child::before {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

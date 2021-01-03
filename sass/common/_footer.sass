@@ -60,3 +60,37 @@
   text-transform: uppercase
   color: white
   background: $secondColor
+
+.footer__end
+  padding: 30px 0 15px
+  background: #283645
+
+  &-content
+    +flex($main: space-between)
+
+.footer__nav-link
+  display: none
+  color: $textColor
+
+  +tablet
+    display: inline
+    position: relative
+    margin: 0 rem(10px)
+			
+    &:last-child
+      margin-right: 0
+
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: rem(-15px)
+      width: 2px
+      height: 2px
+      border-radius: 50%
+      background: rgba(#fff, .4)
+
+    &:first-child::before
+      display: none
+
+
